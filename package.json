@@ -1,0 +1,30 @@
+{
+  "name": "reactTeach",
+  "version": "1.0.0",
+  "description": "This is an application for teaching people react",
+  "main": "server.js",
+  "scripts": {
+    "server": "node server.js",
+    "client": "node scripts/start-client.js",
+    "start": "concurrently \"nodemon server.js\" \"npm run client\"",
+    "build": "node scripts/build.js",
+    "seed": "node scripts/seedDB.js",
+    "test": "npm test",
+    "installDeps": "yarn && cd client && yarn"
+  },
+  "author": "Justin Rice",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^3.5.1",
+    "nodemon": "^1.11.0",
+    "mocha":"2.3.1",
+    "chai":"3.2.0",
+    "chai-http":"1.0.0"
+  },
+  "dependencies": {
+    "axios": "^0.16.2",
+    "body-parser": "^1.17.2",
+    "express": "^4.15.4",
+    "mongoose": "^4.11.7"
+  }
+}

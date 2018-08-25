@@ -1,0 +1,1 @@
+export {SampleComp} from "./SampleComp";
